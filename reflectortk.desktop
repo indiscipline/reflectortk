@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=ReflectorTK
+Comment=A simple GUI for 'reflector'
+Exec=/usr/bin/reflectortk
+StartupNotify=true
+Terminal=false
+# Terminal=False
+Hidden=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel
+Categories=System;Settings
