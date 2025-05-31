@@ -32,19 +32,33 @@ Fun fact: I don't use `reflector-simple` and didn't know it existed until I noti
 
 ## Installation
 
-Currently, installation involves cloning the repository or downloading the source code.
+ReflectorTK is available at the [AUR repository](https://aur.archlinux.org/packages/reflectortk-git) for Arch Linux and its derivative distros. Install with your favourite AUR helper, such as [pakku](https://github.com/zqqw/pakku), paru or yay.
 
-Clone the repository:
+```bash
+pakku -S reflectortk-git
+```
+
+Or download the PKGBUILD file and install with makepkg:
+
+```bash
+git clone https://aur.archlinux.org/reflectortk-git.git
+cd reflectortk-git
+makepkg -si
+```
+
+Or just clone this repository directly and run:
+
 ```bash
 git clone https://github.com/indiscipline/reflectortk.git
 cd reflectortk
+chmod +x reflectortk.py
 ```
 
 ## Usage
 
 1.  **Launch the GUI:**
     ```bash
-    # Make sure it's executable (chmod +x reflectortk.py)
+    # Make sure it's executable (`chmod +x reflectortk.py`)
     ./reflectortk.py
     # Or with Python:
     python reflectortk.py
@@ -57,7 +71,7 @@ cd reflectortk
 
 ## TODO:
 
-- [ ] Publish to AUR.
+- [x] Publish to AUR.
 - [ ] Rewrite leveraging `reflector` as a Python module.
 - [ ] Propose merging with upstream [`reflector`](https://xyne.dev/projects/reflector/) (that's why ReflectorTK is GPLv2).
 
